@@ -1,11 +1,13 @@
 import { Navbar } from '../organisms/Navbar'
-import { Main } from '../organisms/Main'
+import { Header } from '../organisms/Header'
 
 export const Landing = () => {
   return (
     <>
     <Navbar/>
-    <Main/>
+    <div className='px-12 py-20'>
+    <Header/>
+    </div>
     </>
   )
 }
