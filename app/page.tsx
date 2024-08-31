@@ -1,7 +1,7 @@
-import { Landing } from "@/components/pages/Landing";
+import { MainTemplate } from "@/components/templates/MainTemplate";
 
 export default function Home() {
   return (
-    <Landing/>
+    <MainTemplate/>
   );
 }
