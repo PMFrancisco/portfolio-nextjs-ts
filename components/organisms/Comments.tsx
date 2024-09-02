@@ -1,4 +1,3 @@
-import React from 'react';
 import { Heading } from '../atoms/Heading';
 
 export const Comments: React.FC = () => {

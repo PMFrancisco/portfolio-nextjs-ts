@@ -1,4 +1,3 @@
-import React from 'react';
 import { SkillItem } from '../molecules/SkillItem';
 import { Heading } from '../atoms/Heading';
 import { skills } from '../../data/data';

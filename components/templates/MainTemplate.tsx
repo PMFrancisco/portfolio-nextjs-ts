@@ -1,4 +1,3 @@
-import React from 'react';
 import { Header } from '../organisms/Header';
 import { Hero } from '../organisms/Hero';
 import { AboutMe } from '../organisms/AboutMe';
@@ -10,11 +9,11 @@ import { Footer } from '../organisms/Footer';
 
 export const MainTemplate: React.FC = () => {
   return (
-    <div>
+    <div className="lg:h-screen lg:flex lg:flex-col">
       <Header />
-      <div className="lg:flex justify-center lg:space-x-8 max-w-[1088px] gap-8 mx-auto">
+      <div className="lg:flex lg:flex-1 lg:overflow-hidden lg:pt-[32px] lg:pb-[64px] max-w-[1088px] mx-auto lg:space-x-8 gap-8">
         <Hero />
-        <main className="p-8 flex-1 lg:flex-grow lg:ml-auto  ">
+        <main className="p-8 flex-1 lg:overflow-y-auto lg:flex-grow lg:ml-auto">
           <AboutMe />
           <Projects />
           <Experience />
@@ -26,3 +25,4 @@ export const MainTemplate: React.FC = () => {
     </div>
   );
 };
+

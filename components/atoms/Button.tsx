@@ -1,5 +1,3 @@
-import React from 'react';
-
 type ButtonProps = {
   href: string;
   children: React.ReactNode;

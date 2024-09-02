@@ -1,4 +1,3 @@
-import React from 'react';
 import { ProjectCard } from '../molecules/ProjectCard';
 import { Heading } from '../atoms/Heading';
 import { projects } from '../../data/data';

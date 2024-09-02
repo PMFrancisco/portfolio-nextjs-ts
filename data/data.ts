@@ -18,17 +18,11 @@ export const projects = [
   
   export const experience = [
     {
-      role: 'Desarrollador Backend',
-      company: 'Empresa X',
-      period: '2023 - Presente',
+      role: 'Mozo especialista',
+      company: 'Avanza Outsourcing',
+      period: '2015 - Presente',
       description: 'Responsabilidades en el puesto...',
-    },
-    {
-      role: 'Practicante Full Stack',
-      company: 'Empresa Y',
-      period: '2022 - 2023',
-      description: 'Responsabilidades en el puesto...',
-    },
+    }
   ];
   
   export const skills = [

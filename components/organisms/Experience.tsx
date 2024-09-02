@@ -1,4 +1,3 @@
-import React from 'react';
 import { JobItem } from '../molecules/JobItem';
 import { Heading } from '../atoms/Heading';
 import { experience } from '../../data/data';

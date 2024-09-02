@@ -1,5 +1,3 @@
-import React from 'react';
-
 type SocialLinkProps = {
   href: string;
   label: string;
