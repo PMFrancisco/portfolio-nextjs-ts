@@ -4,7 +4,7 @@ import { experience } from '../../data/data';
 
 export const Experience: React.FC = () => {
   return (
-    <section id="experience" className="p-8">
+    <section id="experience">
       <Heading level={2}>Experiencia Profesional</Heading>
       <ul>
         {experience.map((job) => (
