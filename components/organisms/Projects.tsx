@@ -1,6 +1,6 @@
 import { ProjectCard } from '../molecules/ProjectCard';
 import { Heading } from '../atoms/Heading';
-import { projects } from '../../data/data';
+import { projects } from '../../data/projectsData';
 
 export const Projects: React.FC = () => {
   return (

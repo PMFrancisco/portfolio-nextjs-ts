@@ -1,6 +1,6 @@
 import { JobItem } from '../molecules/JobItem';
 import { Heading } from '../atoms/Heading';
-import { experience } from '../../data/data';
+import { experience } from '../../data/experienceData';
 
 export const Experience: React.FC = () => {
   return (

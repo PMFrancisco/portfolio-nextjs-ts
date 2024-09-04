@@ -1,4 +1,4 @@
-import { categoryMapping } from "@/data/data";
+import { categoryMapping } from "@/data/skillsData";
 import { Heading } from "../atoms/Heading";
 import { SkillItem } from "./SkillItem";
 

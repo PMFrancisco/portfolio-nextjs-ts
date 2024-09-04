@@ -1,16 +1,3 @@
-interface Project {
-  name: string;
-  description: string;
-  link: string;
-}
-
-interface Experience {
-  role: string;
-  company: string;
-  period: string;
-  description: string;
-}
-
 interface Skills {
   programmingLanguages: string[];
   frameworksAndLibraries: string[];
@@ -21,33 +8,6 @@ interface Skills {
 interface CategoryMapping {
   [key: string]: string;
 }
-
-export const projects: Project[] = [
-  {
-    name: "Proyecto 1",
-    description: "Descripción del proyecto 1...",
-    link: "#",
-  },
-  {
-    name: "Proyecto 2",
-    description: "Descripción del proyecto 2...",
-    link: "#",
-  },
-  {
-    name: "Proyecto 3",
-    description: "Descripción del proyecto 2...",
-    link: "#",
-  },
-];
-
-export const experience: Experience[] = [
-  {
-    role: "Mozo especialista",
-    company: "Avanza Outsourcing",
-    period: "2015 - Presente",
-    description: "Responsabilidades en el puesto...",
-  },
-];
 
 export const skills: Skills = {
   programmingLanguages: ["JavaScript", "TypeScript", "HTML5", "CSS", "ES6"],
