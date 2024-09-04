@@ -5,7 +5,7 @@ type SocialLinkProps = {
 
 export const SocialLink: React.FC<SocialLinkProps> = ({ href, label }) => {
   return (
-    <a href={href} className="text-emerald-500 dark:text-emerald-300 mx-2">
+    <a href={href} className="text-emerald-600 font-medium mx-2">
       {label}
     </a>
   );

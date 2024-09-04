@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
         />
         <SocialLink
           href="mailto:francisco.perez.munoz@gmail.com"
-          label="Correo"
+          label="E-mail"
         />
       </div>
     </footer>

@@ -5,10 +5,10 @@ import { projects } from '../../data/projectsData';
 export const Projects: React.FC = () => {
   return (
     <section id="projects">
-      <Heading level={2}>Proyectos</Heading>
+      <Heading level={2} className='mb-4'>Proyectos</Heading>
       <div className="grid grid-cols-1 gap-4">
         {projects.map((project) => (
-          <ProjectCard key={project.name} name={project.name} description={project.description} link={project.link} />
+          <ProjectCard key={project.name} name={project.name} description={project.description} link={project.link} imageUrl={project.imageUrl}/>
         ))}
       </div>
     </section>
