@@ -4,6 +4,7 @@ import { AboutMe } from "../organisms/AboutMe";
 import { Projects } from "../organisms/Projects";
 import { Experience } from "../organisms/Experience";
 import { Skills } from "../organisms/Skills";
+import { Studies } from "../organisms/Studies";
 import { Footer } from "../organisms/Footer";
 
 export const MainTemplate: React.FC = () => {
@@ -14,9 +15,9 @@ export const MainTemplate: React.FC = () => {
         <Hero />
         <main className="mx-auto p-8 md:px-0 lg:my-8 flex-1 lg:overflow-y-auto flex justify-center lg:justify-start bg-">
           <div className="flex flex-col max-w-lg gap-8 lg:mr-4">
-            <AboutMe />
             <Projects />
             <Experience />
+            <Studies />
             <Skills />
           </div>
         </main>

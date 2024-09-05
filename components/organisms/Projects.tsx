@@ -8,7 +8,7 @@ export const Projects: React.FC = () => {
       <Heading level={2} className='mb-4'>Proyectos</Heading>
       <div className="grid grid-cols-1 gap-4">
         {projects.map((project) => (
-          <ProjectCard key={project.name} name={project.name} description={project.description} link={project.link} imageUrl={project.imageUrl}/>
+          <ProjectCard key={project.name} name={project.name} description={project.description} link={project.link} imageUrl={project.imageUrl} skills={project.skills}/>
         ))}
       </div>
     </section>
