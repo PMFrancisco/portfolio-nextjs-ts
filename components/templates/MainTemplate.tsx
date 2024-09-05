@@ -1,6 +1,5 @@
 import { Header } from "../organisms/Header";
 import { Hero } from "../organisms/Hero";
-import { AboutMe } from "../organisms/AboutMe";
 import { Projects } from "../organisms/Projects";
 import { Experience } from "../organisms/Experience";
 import { Skills } from "../organisms/Skills";
