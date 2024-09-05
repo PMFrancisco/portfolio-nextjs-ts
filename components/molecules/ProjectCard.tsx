@@ -1,6 +1,7 @@
-import { Heading } from '../atoms/Heading';
-import { Paragraph } from '../atoms/Paragraph';
-import { SkillItem } from './SkillItem';
+import Image from "next/image";
+import { Heading } from "../atoms/Heading";
+import { Paragraph } from "../atoms/Paragraph";
+import { SkillItem } from "./SkillItem";
 
 type ProjectCardProps = {
   name: string;
@@ -10,13 +11,28 @@ type ProjectCardProps = {
   skills: string[];
 };
 
-export const ProjectCard: React.FC<ProjectCardProps> = ({ name, description, link, imageUrl, skills }) => {
+export const ProjectCard: React.FC<ProjectCardProps> = ({
+  name,
+  description,
+  link,
+  imageUrl,
+  skills,
+}) => {
   return (
     <div className="bg-white p-4 rounded-lg shadow-md">
-      <div className='w-full h-64 overflow-hidden rounded-lg'>
-        <img src={imageUrl} alt={name} className="w-full h-full object-cover hover:scale-125 duration-300" />
+      <div className="w-full h-64 overflow-hidden rounded-lg relative">
+        <Image
+          src={imageUrl}
+          alt={name}
+          layout="fill"
+          objectFit="cover"
+          className="scale-75 hover:scale-100 duration-300"
+          priority={true}
+        />
       </div>
-      <Heading level={3} className='my-2'>{name}</Heading>
+      <Heading level={3} className="my-2">
+        {name}
+      </Heading>
       <Paragraph>{description}</Paragraph>
       <ul className="flex flex-wrap">
         {skills.map((skill) => (

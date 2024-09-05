@@ -1,4 +1,5 @@
 import { Heading } from "../atoms/Heading";
+import { Paragraph } from "../atoms/Paragraph";
 
 export const Hero: React.FC = () => {
   return (
@@ -7,10 +8,10 @@ export const Hero: React.FC = () => {
         <Heading level={1} className="text-gray-100">
           Hola, soy Francisco Pérez
         </Heading>
-        <p className="text-gray-700 lg:text-gray-100 font-semibold mt-4">
+        <Paragraph className="text-gray-700 lg:text-gray-100 font-semibold mt-4">
           Soy un desarrollador full stack junior, especializado en el backend y
           el desarrollo de APIs. Bienvenido a mi portafolio.
-        </p>
+        </Paragraph>
       </div>
     </section>
   );

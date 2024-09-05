@@ -1,14 +1,14 @@
 interface Experience {
-  role: string;
-  company: string;
+  title: string;
+  subtitle: string;
   period: string;
   description: string;
 }
 
 export const experience: Experience[] = [
   {
-    role: "Mozo especialista",
-    company: "Avanza Outsourcing",
+    title: "Mozo especialista",
+    subtitle: "Avanza Outsourcing",
     period: "2015 - Presente",
     description: "Responsabilidades en el puesto...",
   },

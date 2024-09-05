@@ -1,16 +1,12 @@
-import { JobItem } from '../molecules/JobItem';
-import { Heading } from '../atoms/Heading';
 import { studies } from '../../data/studiesData';
+import { SectionList } from './SectionList';
 
 export const Studies: React.FC = () => {
   return (
-    <section id="studies">
-      <Heading level={2}>Estudios y certificaciones</Heading>
-      <ul>
-        {studies.map((study) => (
-          <JobItem key={study.degree} role={study.degree} company={study.center} period={study.period} description={study.description} />
-        ))}
-      </ul>
-    </section>
+    <SectionList 
+      title="Estudios y certificaciones" 
+      items={studies} 
+      type="studies" 
+    />
   );
 };

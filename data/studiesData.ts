@@ -1,14 +1,14 @@
 interface Studies {
-  degree: string;
-  center: string;
+  title: string;
+  subtitle: string;
   period: string;
   description: string;
 }
 
 export const studies: Studies[] = [
   {
-    degree: "Full Stack Web Developer",
-    center: "The Bridge Digital Talent Accelerator",
+    title: "Full Stack Web Developer",
+    subtitle: "The Bridge Digital Talent Accelerator",
     period: "Sep 2023 - Abr 2024",
     description: "Estudios realizados...",
   },

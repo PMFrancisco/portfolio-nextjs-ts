@@ -12,7 +12,7 @@ type SkillCategoryProps = {
   
     return (
       <div className="mb-6">
-        <Heading level={3} className="mb-2">
+        <Heading level={3}>
           {formattedCategory}
         </Heading>
         <ul className="flex flex-wrap">

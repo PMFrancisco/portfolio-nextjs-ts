@@ -12,7 +12,7 @@ export const MainTemplate: React.FC = () => {
       <Header />
       <div className="lg:flex lg:flex-1 lg:overflow-hidden lg:pt-[32px] lg:pb-[64px] gap-8 justify-center">
         <Hero />
-        <main className="mx-auto p-8 md:px-0 lg:my-8 flex-1 lg:overflow-y-auto flex justify-center lg:justify-start bg-">
+        <main className="mx-auto p-8 md:px-0 lg:my-8 flex-1 overflow-y-auto flex justify-center lg:justify-start scroll-smooth">
           <div className="flex flex-col max-w-lg gap-8 lg:mr-4">
             <Projects />
             <Experience />
