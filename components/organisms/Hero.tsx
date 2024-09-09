@@ -3,7 +3,7 @@ import { Paragraph } from "../atoms/Paragraph";
 
 export const Hero: React.FC = () => {
   return (
-    <section className="flex-1 bg-gradient-to-b from-emerald-600 from-15% to-emerald-200 to-95% p-8 lg:flex lg:items-start lg:justify-end">
+    <section className="flex-1 lg:sticky top-0 bg-gradient-to-b from-emerald-600 from-15% to-emerald-200 to-95% p-8 lg:flex lg:items-start lg:justify-end">
       <div className="items-end max-w-lg lg:mt-16 mx-auto lg:mx-0">
         <Heading level={1} className="text-gray-100">
           Hola, soy Francisco Pérez
