@@ -9,7 +9,7 @@ export const experience: Experience[] = [
   {
     title: "Mozo especialista",
     subtitle: "Avanza Outsourcing",
-    period: "2015 - Presente",
-    description: "Responsabilidades en el puesto...",
+    period: "Ago 2015 - Presente",
+    description: "Gestión de devoluciones de material y logística inversa de Telefónica.",
   },
 ];

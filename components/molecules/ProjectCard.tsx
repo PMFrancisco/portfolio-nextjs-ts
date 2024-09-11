@@ -20,13 +20,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div className="bg-white p-4 rounded-lg shadow-md">
-      <div className="w-full h-64 overflow-hidden rounded-lg relative">
+      <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
         <Image
           src={imageUrl}
           alt={name}
           layout="fill"
           objectFit="cover"
-          className="scale-75 hover:scale-100 duration-300"
+          className="absolute top-0 left-0 w-full h-full scale-75 hover:scale-100 duration-300"
           priority={true}
         />
       </div>
@@ -34,7 +34,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         {name}
       </Heading>
       <Paragraph>{description}</Paragraph>
-      <ul className="flex flex-wrap">
+      <ul className="flex flex-wrap mt-2">
         {skills.map((skill) => (
           <SkillItem key={skill} skill={skill} />
         ))}

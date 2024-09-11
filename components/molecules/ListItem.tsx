@@ -15,7 +15,7 @@ export const ListItem: React.FC<ListItemProps> = ({ title, subtitle, period, des
       <Heading level={3}>{title}</Heading>
       <Paragraph className="italic">{subtitle}</Paragraph>  
       <Paragraph className="italic">{period}</Paragraph>
-      <Paragraph>{description}</Paragraph>
+      <Paragraph className='mt-2'>{description}</Paragraph>
     </li>
   );
 };

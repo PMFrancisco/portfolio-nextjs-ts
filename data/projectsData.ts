@@ -8,25 +8,49 @@ interface Project {
 
 export const projects: Project[] = [
   {
-    name: "Proyecto 1",
-    description: "Descripción del proyecto 1...",
+    name: "MVP Mera Parivar",
+    description:
+      "Landing page responsiva y pasarela de pago creada con React, JavaScript y Node.js, con integración de la API de PayPal y GeoIP. Desarrollada para el desafío de tripulación de The Bridge en colaboración con las ONGs ItWillBe y Mera Parivar.",
     link: "#",
-    imageUrl: "/mockup-portfolio.jpg",
-    skills: ["JavaScript", "TypeScript", "React", "Nodejs", "Tailwind CSS"],
+    imageUrl: "/projectImages/Mera Parivar MVP screenshot.png",
+    skills: [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Express",
+      "Material UI",
+      "API PayPal",
+    ],
   },
-   
+  
+
   {
-    name: "Proyecto 2",
-    description: "Descripción del proyecto 2...",
+    name: "Tablero virtual",
+    description:
+      "Tablero virtual en tiempo real con Socket.IO, integración con OAuth para autenticación y almacenamiento de estado en PostgresSQL. Permite participación simultánea, sincronización instantánea y personalización.",
     link: "#",
     imageUrl: "/mockup-portfolio.jpg",
-    skills: ["JavaScript", "TypeScript", "React", "Nodejs", "Tailwind CSS"],
+    skills: [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Tailwind CSS",
+      "Socket",
+      "OAuth 2.0",
+    ],
   },
   {
-    name: "Proyecto 3",
-    description: "Descripción del proyecto 2...",
-    link: "#",
-    imageUrl: "/mockup-portfolio.jpg",
-    skills: ["JavaScript", "TypeScript", "React", "Nodejs", "Tailwind CSS"],
+    name: "Biblioteca en Línea",
+    description:
+      "Aplicación de gestión de usuarios y libros, con funcionalidades de CRUD. Desarrollada con Express y TypeScript, almacenando datos en archivos JSON.",
+    link: "https://github.com/PMFrancisco/auj-backend",
+    imageUrl: "/projectImages/Library API swagger page screenshot.png",
+    skills: [
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "Swagger",
+      "JSON",
+    ],
   },
 ];

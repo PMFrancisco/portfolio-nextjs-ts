@@ -2,14 +2,14 @@ import { ListItem } from '../molecules/ListItem';
 import { Heading } from '../atoms/Heading';
 
 type SectionListProps = {
-  title: string;                // El título de la sección (Estudios o Experiencia)
+  title: string;
   items: {
-    title: string;              // Título del ítem (rol o grado)
-    subtitle: string;           // Subtítulo del ítem (empresa o centro)
-    period: string;             // Período
-    description: string;        // Descripción
+    title: string;
+    subtitle: string;
+    period: string;             
+    description: string; 
   }[];
-  type: 'experience' | 'studies';  // Tipo de la sección para diferenciar visualmente
+  type: 'experience' | 'studies';
 };
 
 export const SectionList: React.FC<SectionListProps> = ({ title, items, type }) => {
