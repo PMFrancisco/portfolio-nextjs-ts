@@ -19,14 +19,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   skills,
 }) => {
   return (
-    <div className="bg-white p-4 rounded-lg shadow-md">
+    <div className="bg-white p-4 shadow-md">
       <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
         <Image
           src={imageUrl}
           alt={name}
-          layout="fill"
-          objectFit="cover"
-          className="absolute top-0 left-0 w-full h-full scale-75 hover:scale-100 duration-300"
+          fill={true}
+          className="absolute top-0 left-0 w-full h-full scale-75 hover:scale-100 duration-300 object-cover"
           priority={true}
         />
       </div>
