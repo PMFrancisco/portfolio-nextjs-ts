@@ -25,11 +25,11 @@ export const projects: Project[] = [
   
 
   {
-    name: "Tablero virtual",
+    name: "Quest Weaver",
     description:
       "Tablero virtual en tiempo real con Socket.IO, integración con OAuth para autenticación y almacenamiento de estado en PostgresSQL. Permite participación simultánea, sincronización instantánea y personalización.",
     link: "#",
-    imageUrl: "/mockup-portfolio.jpg",
+    imageUrl: "/projectImages/Quest Weaver screenshot.png",
     skills: [
       "JavaScript",
       "React",
@@ -54,3 +54,4 @@ export const projects: Project[] = [
     ],
   },
 ];
+
