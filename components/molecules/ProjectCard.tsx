@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Heading } from "../atoms/Heading";
 import { Paragraph } from "../atoms/Paragraph";
 import { SkillItem } from "./SkillItem";
+import { Button } from "../atoms/Button";
 
 type ProjectCardProps = {
   name: string;
@@ -19,25 +20,38 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   skills,
 }) => {
   return (
-    <div className="bg-white p-4 shadow-md">
-      <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-        <Image
-          src={imageUrl}
-          alt={name}
-          fill={true}
-          className="absolute top-0 left-0 w-full h-full scale-75 hover:scale-100 duration-300 object-cover"
-          priority={true}
-        />
+    <div className="bg-white border-2 border-black shadow-neo p-4 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
+      <div className="relative w-full border-2 border-black mb-4 overflow-hidden bg-gray-100 group">
+         {/* Aspect Ratio Box */}
+         <div style={{ paddingBottom: "56.25%" }} /> 
+         <Image
+            src={imageUrl}
+            alt={name}
+            fill={true}
+            className="absolute top-0 left-0 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+         />
       </div>
-      <Heading level={3} className="my-2">
+      
+      <Heading level={3} className="mb-2 uppercase tracking-tight">
         {name}
       </Heading>
-      <Paragraph>{description}</Paragraph>
-      <ul className="flex flex-wrap mt-2">
-        {skills.map((skill) => (
-          <SkillItem key={skill} skill={skill} />
-        ))}
-      </ul>
+      
+      <div className="flex-grow">
+        <Paragraph className="text-gray-700 mb-4 text-sm leading-relaxed">
+          {description}
+        </Paragraph>
+      </div>
+
+      <div className="mt-auto">
+        <ul className="flex flex-wrap gap-2 mb-4">
+          {skills.map((skill) => (
+            <SkillItem key={skill} skill={skill} />
+          ))}
+        </ul>
+        <Button href={link} variant="outline" className="w-full text-center text-sm">
+          View Project
+        </Button>
+      </div>
     </div>
   );
 };

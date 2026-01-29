@@ -1,5 +1,5 @@
 import { ListItem } from '../molecules/ListItem';
-import { Heading } from '../atoms/Heading';
+import { Section } from '../atoms/Section';
 
 type SectionListProps = {
   title: string;
@@ -14,20 +14,22 @@ type SectionListProps = {
 
 export const SectionList: React.FC<SectionListProps> = ({ title, items, type }) => {
   return (
-    <section id={type}>
-      <Heading level={2}>{title}</Heading>
-      <ul>
-        {items.map((item, index) => (
-          <ListItem 
-            key={index} 
-            title={item.title} 
-            subtitle={item.subtitle} 
-            period={item.period} 
-            description={item.description} 
-            type={type} 
-          />
-        ))}
-      </ul>
-    </section>
+    <Section id={type} title={title}>
+      <div className="relative">
+        <ul className="flex flex-col gap-8">
+          {items.map((item, index) => (
+            <ListItem 
+              key={index} 
+              title={item.title} 
+              subtitle={item.subtitle} 
+              period={item.period} 
+              description={item.description} 
+              type={type} 
+              isLast={index === items.length - 1}
+            />
+          ))}
+        </ul>
+      </div>
+    </Section>
   );
 };

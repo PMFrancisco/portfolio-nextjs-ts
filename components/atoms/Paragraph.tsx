@@ -3,6 +3,6 @@ type ParagraphProps = {
   className?: string;
 };
 
-export const Paragraph: React.FC<ParagraphProps> = ({ children, className }) => {
-  return <p className={`text-lg ${className}`}>{children}</p>;
+export const Paragraph: React.FC<ParagraphProps> = ({ children, className = "" }) => {
+  return <p className={`font-sans text-base leading-relaxed ${className}`}>{children}</p>;
 };

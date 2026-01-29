@@ -1,16 +1,27 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import { ProjectCard } from '../molecules/ProjectCard';
-import { Heading } from '../atoms/Heading';
-import { projects } from '../../data/projectsData';
+import { Section } from '../atoms/Section';
+import { projects } from '@/data/projectsData';
 
 export const Projects: React.FC = () => {
+  const t = useTranslations('projects');
+
   return (
-    <section id="projects">
-      <Heading level={2}>Proyectos</Heading>
-      <div className="grid grid-cols-1 gap-4">
+    <Section id="projects" title={t('title')}>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         {projects.map((project) => (
-          <ProjectCard key={project.name} name={project.name} description={project.description} link={project.link} imageUrl={project.imageUrl} skills={project.skills}/>
+          <ProjectCard 
+            key={project.id} 
+            name={t(`items.${project.id}.name`)} 
+            description={t(`items.${project.id}.description`)} 
+            link={project.link} 
+            imageUrl={project.imageUrl} 
+            skills={project.skills}
+          />
         ))}
       </div>
-    </section>
+    </Section>
   );
 };
