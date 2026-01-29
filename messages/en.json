@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "title": "Francisco Pérez",
+    "description": "Francisco Pérez Full Stack Developer Portfolio"
+  },
+  "hero": {
+    "name": "Francisco Pérez",
+    "role": "Full Stack Developer",
+    "tagline": "Architecting robust backends and intuitive digital experiences."
+  },
+  "nav": {
+    "about": "About",
+    "toolbox": "Toolbox",
+    "projects": "Projects",
+    "experience": "Experience",
+    "studies": "Studies",
+    "contact": "Contact"
+  },
+  "social": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph1": "I'm a Full Stack Developer with experience in JavaScript, React, Node.js, Express, MongoDB, and SQL. I graduated from The Bridge, where I acquired practical skills through real-world projects while applying agile methodologies and teamwork.",
+    "paragraph2": "I specialize in building robust backends and intuitive APIs, but I enjoy working across the entire stack. Frontend: React, Next.js, HTML, CSS, JavaScript, TypeScript. Backend: Node.js, Express, Python, REST APIs. Databases: MongoDB, SQL.",
+    "paragraph3": "When I'm not coding, you can find me exploring new tech trends, optimizing workflows, or enjoying a good cup of coffee while planning my next project. Open to opportunities and collaborations."
+  },
+  "toolbox": {
+    "title": "My Toolbox",
+    "categories": {
+      "programmingLanguages": "Programming Languages",
+      "frameworksAndLibraries": "Frameworks & Libraries",
+      "toolsAndPlatforms": "Tools & Platforms",
+      "databases": "Databases"
+    }
+  },
+  "projects": {
+    "title": "Selected Projects",
+    "viewProject": "View Project",
+    "items": {
+      "meraParivar": {
+        "name": "MVP Mera Parivar",
+        "description": "Responsive landing page and payment gateway built with React, JavaScript and Node.js, featuring PayPal API and GeoIP integration. Developed for The Bridge crew challenge in collaboration with NGOs ItWillBe and Mera Parivar."
+      },
+      "questWeaver": {
+        "name": "Quest Weaver",
+        "description": "Real-time virtual board with Socket.IO, OAuth integration for authentication, and state storage in PostgreSQL. Enables simultaneous participation, instant synchronization, and customization."
+      },
+      "libraryApi": {
+        "name": "Online Library",
+        "description": "User and book management application with CRUD functionalities. Built with Express and TypeScript, storing data in JSON files."
+      },
+      "ligatgm": {
+        "name": "Liga TGM",
+        "description": "Web application developed as a freelance project using TypeScript and Firebase."
+      }
+    }
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "items": {
+      "tis": {
+        "title": "Full Stack Developer",
+        "subtitle": "T.I.S. Consultoría de IA",
+        "period": "Aug 2025 - Present",
+        "description": "Designed and integrated omnichannel virtual switchboard connecting calls, WhatsApp, web chat, and email. Implemented AI-driven automation and routing. Integrated with CRM and ERP systems. Created MarIA 360 as the unified communication layer."
+      },
+      "catapulta": {
+        "title": "Full Stack Developer",
+        "subtitle": "Catapulta",
+        "period": "Jan 2025 - Aug 2025",
+        "description": "Event microservice with Ponder to index and process smart contract events in real time. MCP for CLI enabling command execution through natural language. CLI commands for Foundry optimizing contract deployment and verification."
+      },
+      "adoptavalenciano": {
+        "title": "Fullstack Developer",
+        "subtitle": "Adopta un Valenciano",
+        "period": "Oct 2024 - Jan 2025",
+        "description": "Implementation of route middlewares to optimize data flow and security in the backend. Creation of schemas to manage terms and conditions. Development of controllers to handle interactions between different system components."
+      },
+      "adoptaunjunior": {
+        "title": "Backend Developer",
+        "subtitle": "AdoptaUnJunior",
+        "period": "Sep 2024 - Nov 2024",
+        "description": "Collaborative backend development in open source project connecting junior developers with mentors."
+      },
+      "avanza": {
+        "title": "Specialist Warehouse Worker",
+        "subtitle": "Avanza Externalización de Servicios",
+        "period": "Aug 2015 - Jan 2025",
+        "description": "Management of material returns and reverse logistics for Telefónica."
+      }
+    }
+  },
+  "studies": {
+    "title": "Studies & Certifications",
+    "items": {
+      "thebridge": {
+        "title": "Full Stack Web Developer",
+        "subtitle": "The Bridge Digital Talent Accelerator",
+        "period": "Sep 2023 - Apr 2024",
+        "description": "Full stack web development, including Front-End, Back-End, databases, version control, and DevOps. Certifications in Backend, Docker, GitHub, MongoDB, SQL, CSS, ES6, HTML, JavaScript, and Object Oriented Programming."
+      }
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "headline": "Let's Build Something.",
+    "description": "I'm currently open to new opportunities and collaborations. Whether you have a question, a project idea, or just want to say hi, I'll try my best to get back to you!",
+    "sayHello": "Say Hello",
+    "connectLinkedIn": "Connect on LinkedIn"
+  },
+  "footer": {
+    "copyright": "© {year} Francisco Pérez."
+  }
+}

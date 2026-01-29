@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "title": "Francisco Pérez",
+    "description": "Portfolio de Francisco Pérez, Desarrollador Full Stack"
+  },
+  "hero": {
+    "name": "Francisco Pérez",
+    "role": "Desarrollador Full Stack",
+    "tagline": "Construyendo backends robustos y experiencias digitales intuitivas."
+  },
+  "nav": {
+    "about": "Sobre mí",
+    "toolbox": "Herramientas",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "studies": "Estudios",
+    "contact": "Contacto"
+  },
+  "social": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "paragraph1": "Soy un Desarrollador Full Stack con experiencia en JavaScript, React, Node.js, Express, MongoDB y SQL. Me gradué en The Bridge, donde adquirí habilidades prácticas a través de proyectos reales aplicando metodologías ágiles y trabajo en equipo.",
+    "paragraph2": "Me especializo en construir backends robustos y APIs intuitivas, pero disfruto trabajando en todo el stack. Frontend: React, Next.js, HTML, CSS, JavaScript, TypeScript. Backend: Node.js, Express, Python, REST APIs. Bases de datos: MongoDB, SQL.",
+    "paragraph3": "Cuando no estoy programando, puedes encontrarme explorando nuevas tendencias tecnológicas, optimizando flujos de trabajo, o disfrutando de un buen café mientras planeo mi próximo proyecto. Abierto a oportunidades y colaboraciones."
+  },
+  "toolbox": {
+    "title": "Mi Caja de Herramientas",
+    "categories": {
+      "programmingLanguages": "Lenguajes de Programación",
+      "frameworksAndLibraries": "Frameworks y Librerías",
+      "toolsAndPlatforms": "Herramientas y Plataformas",
+      "databases": "Bases de Datos"
+    }
+  },
+  "projects": {
+    "title": "Proyectos Seleccionados",
+    "viewProject": "Ver Proyecto",
+    "items": {
+      "meraParivar": {
+        "name": "MVP Mera Parivar",
+        "description": "Landing page responsiva y pasarela de pago creada con React, JavaScript y Node.js, con integración de la API de PayPal y GeoIP. Desarrollada para el desafío de tripulación de The Bridge en colaboración con las ONGs ItWillBe y Mera Parivar."
+      },
+      "questWeaver": {
+        "name": "Quest Weaver",
+        "description": "Tablero virtual en tiempo real con Socket.IO, integración con OAuth para autenticación y almacenamiento de estado en PostgreSQL. Permite participación simultánea, sincronización instantánea y personalización."
+      },
+      "libraryApi": {
+        "name": "Biblioteca en Línea",
+        "description": "Aplicación de gestión de usuarios y libros, con funcionalidades de CRUD. Desarrollada con Express y TypeScript, almacenando datos en archivos JSON."
+      },
+      "ligatgm": {
+        "name": "Liga TGM",
+        "description": "Aplicación web desarrollada como proyecto freelance utilizando TypeScript y Firebase."
+      }
+    }
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "items": {
+      "tis": {
+        "title": "Desarrollador Full Stack",
+        "subtitle": "T.I.S. Consultoría de IA",
+        "period": "Ago 2025 - Presente",
+        "description": "Diseño e integración de centralita virtual omnicanal conectando llamadas, WhatsApp, chat web y email. Implementación de automatización y enrutamiento impulsado por IA. Integración con sistemas CRM y ERP. Creación de MarIA 360 como capa de comunicación unificada."
+      },
+      "catapulta": {
+        "title": "Desarrollador Full Stack",
+        "subtitle": "Catapulta",
+        "period": "Ene 2025 - Ago 2025",
+        "description": "Microservicio de eventos con Ponder para indexar y procesar eventos de contratos inteligentes en tiempo real. MCP para CLI permitiendo usar comandos mediante lenguaje natural. Comandos CLI para Foundry optimizando despliegue y verificación de contratos."
+      },
+      "adoptavalenciano": {
+        "title": "Desarrollador Fullstack",
+        "subtitle": "Adopta un Valenciano",
+        "period": "Oct 2024 - Ene 2025",
+        "description": "Implementación de middlewares de rutas para optimizar el flujo de datos y seguridad en el backend. Creación de esquemas para gestionar términos y condiciones de uso. Desarrollo de controladores para manejar interacciones entre diferentes partes del sistema."
+      },
+      "adoptaunjunior": {
+        "title": "Desarrollador Backend",
+        "subtitle": "AdoptaUnJunior",
+        "period": "Sep 2024 - Nov 2024",
+        "description": "Desarrollo backend colaborativo en proyecto de código abierto para conectar desarrolladores junior con mentores."
+      },
+      "avanza": {
+        "title": "Mozo Especialista",
+        "subtitle": "Avanza Externalización de Servicios",
+        "period": "Ago 2015 - Ene 2025",
+        "description": "Gestión de devoluciones de material y logística inversa de Telefónica."
+      }
+    }
+  },
+  "studies": {
+    "title": "Estudios y Certificaciones",
+    "items": {
+      "thebridge": {
+        "title": "Desarrollador Web Full Stack",
+        "subtitle": "The Bridge Digital Talent Accelerator",
+        "period": "Sep 2023 - Abr 2024",
+        "description": "Desarrollo web full stack, incluyendo Front-End, Back-End, bases de datos, control de versiones y DevOps. Certificaciones en Backend, Docker, GitHub, MongoDB, SQL, CSS, ES6, HTML, JavaScript y Programación Orientada a Objetos."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "headline": "Construyamos Algo Juntos.",
+    "description": "Actualmente estoy abierto a nuevas oportunidades y colaboraciones. Si tienes una pregunta, una idea de proyecto, o simplemente quieres saludar, ¡haré lo posible por responderte!",
+    "sayHello": "Saluda",
+    "connectLinkedIn": "Conectar en LinkedIn"
+  },
+  "footer": {
+    "copyright": "© {year} Francisco Pérez."
+  }
+}
