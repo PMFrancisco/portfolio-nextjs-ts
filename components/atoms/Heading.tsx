@@ -19,7 +19,6 @@ export const Heading: React.FC<HeadingProps> = ({ level, children, className = "
   const Tag = headingTags[level];
   const baseStyles = "font-mono font-bold text-black";
   
-  // Size mapping (can be overridden by className)
   const sizeStyles: Record<HeadingLevel, string> = {
     1: "text-4xl lg:text-5xl",
     2: "text-3xl lg:text-4xl",

@@ -26,15 +26,14 @@ export const MainTemplate: React.FC = () => {
         });
       },
       { 
-        root: null, // viewport
-        rootMargin: "-20% 0px -60% 0px", // triggers when element is near the top
+        root: null,
+        rootMargin: "-20% 0px -60% 0px",
         threshold: 0
       }
     );
 
     const sections = document.querySelectorAll("section[id]");
     sections.forEach((section) => {
-      // Only observe sections that are actually in the nav list
       if (["about", "toolbox", "projects", "experience", "studies", "contact"].includes(section.id)) {
         observer.observe(section);
       }
@@ -45,13 +44,10 @@ export const MainTemplate: React.FC = () => {
 
   return (
     <div className="lg:h-screen lg:grid lg:grid-cols-2 overflow-hidden bg-cream">
-      {/* Left Panel: Fixed Sidebar (50%) */}
-      {/* Added overflow-y-auto to handle short screens/tall content */}
       <aside className="lg:h-full lg:overflow-hidden lg:border-r-4 lg:border-black bg-white z-20 relative flex flex-col">
         <Hero activeSection={activeSection} />
       </aside>
 
-      {/* Right Panel: Scrollable Content (50%) */}
       <main className="lg:h-full lg:overflow-y-auto scroll-smooth bg-cream">
         <div className="p-8 md:p-12 lg:p-16 flex flex-col gap-16">
            <About />

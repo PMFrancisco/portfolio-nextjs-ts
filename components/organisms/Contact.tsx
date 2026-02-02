@@ -11,7 +11,6 @@ export const Contact: React.FC = () => {
   return (
     <Section id="contact" title={t('title')}>
       <div className="bg-white border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-        {/* Retro Window Header */}
         <div className="bg-black text-white px-4 py-2 flex items-center justify-between border-b-2 border-black">
           <div className="font-mono font-bold text-sm tracking-widest">MESSAGE_SYSTEM.EXE</div>
           <div className="flex gap-2">
@@ -21,7 +20,6 @@ export const Contact: React.FC = () => {
           </div>
         </div>
 
-        {/* Window Content */}
         <div className="p-8 md:p-12 text-center bg-gray-50">
           <h2 className="text-3xl md:text-4xl font-mono font-bold text-black mb-6">
             {t('headline')}

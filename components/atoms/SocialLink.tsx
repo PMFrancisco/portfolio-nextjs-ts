@@ -3,7 +3,7 @@ import { IconType } from "react-icons";
 type SocialLinkProps = {
   href: string;
   icon: IconType;
-  label: string; // Used for aria-label
+  label: string;
 };
 
 export const SocialLink: React.FC<SocialLinkProps> = ({ href, icon: Icon, label }) => {
