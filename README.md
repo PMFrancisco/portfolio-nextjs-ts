@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Francisco Pérez - Portfolio
+
+A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features internationalization (English/Spanish), Atomic Design architecture, and a clean neobrutalist aesthetic.
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS 4
+- **Internationalization:** next-intl
+- **Icons:** react-icons
+- **Analytics:** Vercel Analytics
+
+## Features
+
+- Responsive design with mobile-first approach
+- Bilingual support (English/Spanish) with automatic locale detection
+- Atomic Design component architecture
+- Intersection Observer for active section highlighting
+- Split-panel layout (fixed sidebar + scrollable content)
+- SEO optimized with dynamic metadata
+
+## Project Structure
+
+```
+├── app/
+│   └── [locale]/          # i18n routing
+│       ├── layout.tsx     # Root layout with metadata
+│       └── page.tsx       # Home page
+├── components/
+│   ├── atoms/             # Basic UI elements (Button, Heading, etc.)
+│   ├── molecules/         # Composite components (ProjectCard, SkillItem)
+│   ├── organisms/         # Page sections (Hero, About, Projects, etc.)
+│   └── templates/         # Page layouts (MainTemplate)
+├── data/                  # Static data (projects, skills, experience)
+├── i18n/                  # Internationalization config
+├── messages/              # Translation files (en.json, es.json)
+└── public/
+    └── projectImages/     # Project screenshots
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/PMFrancisco/portfolio-nextjs-ts.git
+
+# Navigate to project directory
+cd portfolio-nextjs-ts
+
+# Install dependencies
+npm install
+```
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run start` | Start production server |
+| `npm run lint` | Run ESLint |
+| `npm run lint:fix` | Fix ESLint errors |
+| `npm run type-check` | Run TypeScript type checking |
+| `npm run clean` | Remove `.next` build folder |
 
-## Learn More
+## Internationalization
 
-To learn more about Next.js, take a look at the following resources:
+The portfolio supports English and Spanish. Language can be switched via the language switcher in the navigation.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Default locale:** English (`/en`)
+- **Supported locales:** English (`en`), Spanish (`es`)
+- Translation files are located in `/messages/`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Sections
 
-## Deploy on Vercel
+- **Hero** - Introduction with navigation and social links
+- **About** - Personal background and skills overview
+- **Toolbox** - Technical skills organized by category
+- **Projects** - Selected work with screenshots and tech tags
+- **Experience** - Professional work history
+- **Studies** - Education and certifications
+- **Contact** - Contact information and call-to-action
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The easiest way to deploy is using the [Vercel Platform](https://vercel.com/new):
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+```
+
+Or connect your GitHub repository directly to Vercel for automatic deployments.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).

@@ -3,6 +3,7 @@
 import { useLocale } from 'next-intl';
 import { useRouter, usePathname } from '@/i18n/navigation';
 import { useTransition } from 'react';
+import { Button } from './Button';
 
 export const LanguageSwitcher: React.FC = () => {
   const locale = useLocale();
@@ -18,13 +19,14 @@ export const LanguageSwitcher: React.FC = () => {
   };
 
   return (
-    <button
+    <Button
       onClick={toggleLocale}
       disabled={isPending}
-      className="px-3 py-1 bg-black text-white font-mono text-sm font-bold border-2 border-white hover:bg-white hover:text-black transition-colors disabled:opacity-50 shadow-[2px_2px_0px_0px_rgba(255,255,255,0.5)]"
+      variant="outline"
+      className="!px-3 !py-1 text-sm"
       aria-label={`Switch to ${locale === 'en' ? 'Spanish' : 'English'}`}
     >
       {isPending ? '...' : locale === 'en' ? 'ES' : 'EN'}
-    </button>
+    </Button>
   );
 };
