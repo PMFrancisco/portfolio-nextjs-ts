@@ -14,11 +14,5 @@ export const Studies: React.FC = () => {
     description: t(`items.${item.id}.description`),
   }));
 
-  return (
-    <SectionList 
-      title={t('title')} 
-      items={items} 
-      type="studies" 
-    />
-  );
+  return <SectionList title={t('title')} items={items} type="studies" />;
 };

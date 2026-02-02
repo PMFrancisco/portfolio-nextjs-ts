@@ -1,4 +1,4 @@
-import { IconType } from "react-icons";
+import { IconType } from 'react-icons';
 
 type SocialLinkProps = {
   href: string;
@@ -6,10 +6,14 @@ type SocialLinkProps = {
   label: string;
 };
 
-export const SocialLink: React.FC<SocialLinkProps> = ({ href, icon: Icon, label }) => {
+export const SocialLink: React.FC<SocialLinkProps> = ({
+  href,
+  icon: Icon,
+  label,
+}) => {
   return (
-    <a 
-      href={href} 
+    <a
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}

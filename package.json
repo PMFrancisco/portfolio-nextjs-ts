@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "type-check": "tsc --noEmit",
+    "format": "prettier --write .",
     "audit": "npm audit",
     "audit:fix": "npm audit fix",
     "clean": "rm -rf .next",
@@ -30,6 +31,7 @@
     "eslint": "^9.39.2",
     "eslint-config-next": "^16.1.6",
     "postcss": "^8",
+    "prettier": "^3.8.1",
     "tailwindcss": "^4.1.18",
     "typescript": "^5"
   }

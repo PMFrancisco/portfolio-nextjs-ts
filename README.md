@@ -69,15 +69,15 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 
 ### Available Scripts
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm run start` | Start production server |
-| `npm run lint` | Run ESLint |
-| `npm run lint:fix` | Fix ESLint errors |
+| Command              | Description                  |
+| -------------------- | ---------------------------- |
+| `npm run dev`        | Start development server     |
+| `npm run build`      | Build for production         |
+| `npm run start`      | Start production server      |
+| `npm run lint`       | Run ESLint                   |
+| `npm run lint:fix`   | Fix ESLint errors            |
 | `npm run type-check` | Run TypeScript type checking |
-| `npm run clean` | Remove `.next` build folder |
+| `npm run clean`      | Remove `.next` build folder  |
 
 ## Internationalization
 

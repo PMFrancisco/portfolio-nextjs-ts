@@ -1,8 +1,8 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --color-cream: #FDFBF7;
-  --shadow-neo: 4px 4px 0px 0px rgba(0,0,0,1);
+  --color-cream: #fdfbf7;
+  --shadow-neo: 4px 4px 0px 0px rgba(0, 0, 0, 1);
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-jetbrains), ui-monospace, monospace;
 }
@@ -12,7 +12,7 @@ body {
 }
 
 body::after {
-  content: "";
+  content: '';
   position: fixed;
   top: 0;
   left: 0;
@@ -46,6 +46,6 @@ p {
 
 /* For IE, Edge and Firefox */
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

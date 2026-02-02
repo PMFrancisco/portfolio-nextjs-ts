@@ -1,15 +1,18 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata, Viewport } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import { Analytics } from "@vercel/analytics/react";
-import { Inter, JetBrains_Mono } from "next/font/google";
-import { projects } from "@/data/projectsData";
-import "../globals.css";
+import { Analytics } from '@vercel/analytics/react';
+import { Inter, JetBrains_Mono } from 'next/font/google';
+import { projects } from '@/data/projectsData';
+import '../globals.css';
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrains" });
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const jetbrains = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrains',
+});
 
 type Props = {
   children: React.ReactNode;
@@ -39,8 +42,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `/${locale}`,
       languages: {
-        'en': '/en',
-        'es': '/es',
+        en: '/en',
+        es: '/es',
       },
     },
     openGraph: {
@@ -92,8 +95,8 @@ export default async function LocaleLayout({ children, params }: Props) {
     jobTitle: 'Full Stack Developer',
     sameAs: [
       'https://linkedin.com/in/franciscopm',
-      'https://github.com/pmfrancisco'
-    ]
+      'https://github.com/pmfrancisco',
+    ],
   };
 
   const websiteSchema = {
@@ -115,9 +118,9 @@ export default async function LocaleLayout({ children, params }: Props) {
         description: tProjects(`items.${project.id}.description`),
         url: project.link,
         applicationCategory: 'WebApplication',
-        operatingSystem: 'Any'
-      }
-    }))
+        operatingSystem: 'Any',
+      },
+    })),
   };
 
   return (
@@ -125,10 +128,18 @@ export default async function LocaleLayout({ children, params }: Props) {
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify([personSchema, websiteSchema, itemListSchema]) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              personSchema,
+              websiteSchema,
+              itemListSchema,
+            ]),
+          }}
         />
       </head>
-      <body className={`${inter.variable} ${jetbrains.variable} font-sans bg-cream text-gray-900`}>
+      <body
+        className={`${inter.variable} ${jetbrains.variable} font-sans bg-cream text-gray-900`}
+      >
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
