@@ -10,6 +10,7 @@ type ProjectCardProps = {
   link: string;
   imageUrl: string;
   skills: string[];
+  viewProjectLabel: string;
 };
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -18,16 +19,17 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   link,
   imageUrl,
   skills,
+  viewProjectLabel,
 }) => {
   return (
     <div className="bg-white border-2 border-black shadow-neo p-4 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
       <div className="relative w-full border-2 border-black mb-4 overflow-hidden bg-gray-100 group">
-         {/* Aspect Ratio Box */}
          <div style={{ paddingBottom: "56.25%" }} /> 
          <Image
             src={imageUrl}
             alt={name}
             fill={true}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="absolute top-0 left-0 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
          />
       </div>
@@ -49,7 +51,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           ))}
         </ul>
         <Button href={link} variant="outline" className="w-full text-center text-sm">
-          View Project
+          {viewProjectLabel}
         </Button>
       </div>
     </div>
