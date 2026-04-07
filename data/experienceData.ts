@@ -4,6 +4,7 @@ export interface Experience {
 
 export const experience: Experience[] = [
   { id: 'tis' },
+  { id: 'ligatgm' },
   { id: 'catapulta' },
   { id: 'adoptavalenciano' },
   { id: 'adoptaunjunior' },
