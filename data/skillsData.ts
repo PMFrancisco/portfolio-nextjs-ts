@@ -3,21 +3,32 @@ export interface Skills {
 }
 
 export const skills: Skills = {
-  programmingLanguages: [
+  frontend: [
     'JavaScript',
     'TypeScript',
-    'ES6',
-    'Python',
     'HTML5',
     'CSS',
-  ],
-  frameworksAndLibraries: [
-    'React',
-    'Next.js',
-    'Express.js',
-    'Nodejs',
     'Tailwind CSS',
+    'React',
+    'React Native',
+    'Next.js',
+    'Astro',
+    'Expo',
   ],
-  toolsAndPlatforms: ['Git', 'GitHub', 'Docker', 'Firebase', 'Socket'],
-  databases: ['MongoDB', 'MySQL', 'PostgreSQL'],
+  backend: ['Node.js', 'Express', 'Fastify', 'tRPC', 'Python', 'REST APIs', 'Socket.IO'],
+  databases: ['PostgreSQL', 'SQL', 'MongoDB', 'Redis', 'Firebase Firestore', 'Supabase'],
+  devops: ['Git', 'GitHub Actions', 'CI/CD', 'Docker', 'Turborepo', 'Vercel', 'Grafana', 'Prometheus'],
+  toolsAndTechnologies: [
+    'Prisma',
+    'Zod',
+    'Vitest',
+    'Firebase',
+    'Stripe',
+    'MCP',
+    'Microservices',
+    'AI integrations',
+    'Foundry',
+    'Hardhat',
+    'Web3',
+  ],
 };

@@ -31,10 +31,11 @@
   "toolbox": {
     "title": "My Toolbox",
     "categories": {
-      "programmingLanguages": "Programming Languages",
-      "frameworksAndLibraries": "Frameworks & Libraries",
-      "toolsAndPlatforms": "Tools & Platforms",
-      "databases": "Databases"
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "databases": "Databases",
+      "devops": "DevOps",
+      "toolsAndTechnologies": "Tools & Technologies"
     }
   },
   "projects": {

@@ -24,10 +24,14 @@ export const Toolbox: React.FC = () => {
   return (
     <Section id="toolbox" title={t('title')}>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {Object.entries(skills).map(([category, skillList]) => (
+        {Object.entries(skills).map(([category, skillList], index, entries) => (
           <div
             key={category}
-            className="bg-white p-6 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+            className={`bg-white p-6 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] ${
+              entries.length % 2 !== 0 && index === entries.length - 1
+                ? 'md:col-span-2'
+                : ''
+            }`}
           >
             <Heading
               level={3}

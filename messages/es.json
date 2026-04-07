@@ -31,10 +31,11 @@
   "toolbox": {
     "title": "Mi Caja de Herramientas",
     "categories": {
-      "programmingLanguages": "Lenguajes de Programación",
-      "frameworksAndLibraries": "Frameworks y Librerías",
-      "toolsAndPlatforms": "Herramientas y Plataformas",
-      "databases": "Bases de Datos"
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "databases": "Bases de Datos",
+      "devops": "DevOps",
+      "toolsAndTechnologies": "Herramientas y Tecnologías"
     }
   },
   "projects": {
