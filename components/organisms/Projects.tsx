@@ -11,7 +11,7 @@ export const Projects: React.FC = () => {
   return (
     <Section id="projects" title={t('title')}>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <ProjectCard
             key={project.id}
             name={t(`items.${project.id}.name`)}
@@ -21,6 +21,7 @@ export const Projects: React.FC = () => {
             skills={project.skills}
             screenshotAlt={t('screenshotAlt', { name: t(`items.${project.id}.name`) })}
             viewProjectLabel={t('viewProject')}
+            priority={index === 0}
           />
         ))}
       </div>

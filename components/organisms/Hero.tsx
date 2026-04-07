@@ -72,7 +72,7 @@ export const Hero: React.FC<HeroProps> = ({ activeSection }) => {
                 <a
                   key={item.href}
                   href={item.href}
-                  aria-current={isActive ? 'true' : undefined}
+                  aria-current={isActive ? 'page' : undefined}
                   className={`text-lg lg:text-xl xl:text-2xl font-mono font-bold hover:translate-x-4 transition-transform w-fit flex items-center gap-3 group focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-black motion-reduce:transition-none motion-reduce:hover:transform-none ${isActive ? 'translate-x-4 text-black' : 'text-white hover:text-black'}`}
                 >
                   <span

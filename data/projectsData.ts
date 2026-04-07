@@ -9,7 +9,7 @@ export const projects: Project[] = [
   {
     id: 'meraParivar',
     link: '#',
-    imageUrl: '/projectImages/mera-parivar-mvp.png',
+    imageUrl: '/projectImages/mera-parivar-mvp.webp',
     skills: [
       'JavaScript',
       'React',
@@ -22,7 +22,7 @@ export const projects: Project[] = [
   {
     id: 'questWeaver',
     link: '#',
-    imageUrl: '/projectImages/quest-weaver.png',
+    imageUrl: '/projectImages/quest-weaver.webp',
     skills: [
       'JavaScript',
       'React',
@@ -35,13 +35,13 @@ export const projects: Project[] = [
   {
     id: 'libraryApi',
     link: 'https://github.com/PMFrancisco/auj-backend',
-    imageUrl: '/projectImages/library-api-swagger.png',
+    imageUrl: '/projectImages/library-api-swagger.webp',
     skills: ['TypeScript', 'Node.js', 'Express', 'Swagger', 'JSON'],
   },
   {
     id: 'ligatgm',
     link: 'https://www.ligatgm.es/',
-    imageUrl: '/projectImages/ligatgm.png',
+    imageUrl: '/projectImages/ligatgm.webp',
     skills: ['TypeScript', 'Firebase'],
   },
 ];

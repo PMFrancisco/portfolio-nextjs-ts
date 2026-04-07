@@ -12,6 +12,7 @@ type ProjectCardProps = {
   skills: string[];
   screenshotAlt: string;
   viewProjectLabel: string;
+  priority?: boolean;
 };
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -22,17 +23,19 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   skills,
   screenshotAlt,
   viewProjectLabel,
+  priority = false,
 }) => {
+  const hasLink = link && link !== '#';
   return (
     <div className="bg-white border-2 border-black shadow-neo p-4 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none">
-      <div className="relative w-full border-2 border-black mb-4 overflow-hidden bg-gray-100 group">
-        <div style={{ paddingBottom: '56.25%' }} />
+      <div className="relative w-full aspect-video border-2 border-black mb-4 overflow-hidden bg-gray-100 group">
         <Image
           src={imageUrl}
           alt={screenshotAlt}
           fill={true}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="absolute top-0 left-0 object-cover grayscale group-hover:grayscale-0 transition-all duration-500 motion-reduce:transition-none"
+          priority={priority}
+          className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500 motion-reduce:transition-none"
         />
       </div>
 
@@ -52,13 +55,15 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             <SkillItem key={skill} skill={skill} />
           ))}
         </ul>
-        <Button
-          href={link}
-          variant="outline"
-          className="w-full text-center text-sm"
-        >
-          {viewProjectLabel}
-        </Button>
+        {hasLink && (
+          <Button
+            href={link}
+            variant="outline"
+            className="w-full text-center text-sm"
+          >
+            {viewProjectLabel}
+          </Button>
+        )}
       </div>
     </div>
   );

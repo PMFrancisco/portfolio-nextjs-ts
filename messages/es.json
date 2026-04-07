@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Francisco Pérez",
-    "description": "Portfolio de Francisco Pérez, Desarrollador Full Stack",
+    "description": "Francisco Pérez — Desarrollador Full Stack especializado en React, Next.js, Node.js y TypeScript. Explora mis proyectos, experiencia profesional y conecta conmigo.",
     "keywords": "Desarrollador Full Stack, Desarrollo Web, React, Next.js, TypeScript, Node.js, Portafolio, Francisco Pérez"
   },
   "hero": {
@@ -123,7 +123,8 @@
     "skipToContent": "Saltar al contenido principal",
     "mainNavigation": "Navegación principal",
     "opensInNewTab": "(se abre en una pestaña nueva)",
-    "switchLanguage": "Cambiar a inglés"
+    "switchLanguage": "Cambiar a inglés",
+    "opensEmailClient": "(abre cliente de correo)"
   },
   "footer": {
     "copyright": "© {year} Francisco Pérez."

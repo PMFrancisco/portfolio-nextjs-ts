@@ -26,9 +26,9 @@ export const Contact: React.FC = () => {
         </div>
 
         <div className="p-8 md:p-12 text-center bg-gray-50">
-          <h2 className="text-3xl md:text-4xl font-mono font-bold text-black mb-6">
+          <h3 className="text-3xl md:text-4xl font-mono font-bold text-black mb-6">
             {t('headline')}
-          </h2>
+          </h3>
           <Paragraph className="text-gray-700 mb-8 max-w-lg mx-auto font-medium text-lg">
             {t('description')}
           </Paragraph>

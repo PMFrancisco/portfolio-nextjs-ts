@@ -16,13 +16,20 @@ export const SocialLink: React.FC<SocialLinkProps> = ({
 }) => {
   const t = useTranslations('a11y');
   const isExternal = href.startsWith('http');
+  const isMailto = href.startsWith('mailto:');
+
+  const getAriaLabel = () => {
+    if (isExternal) return `${label} ${t('opensInNewTab')}`;
+    if (isMailto) return `${label} ${t('opensEmailClient')}`;
+    return label;
+  };
 
   return (
     <a
       href={href}
       target={isExternal ? '_blank' : undefined}
       rel={isExternal ? 'noopener noreferrer' : undefined}
-      aria-label={isExternal ? `${label} ${t('opensInNewTab')}` : label}
+      aria-label={getAriaLabel()}
       className="
         inline-flex items-center justify-center
         w-10 h-10 lg:w-12 lg:h-12

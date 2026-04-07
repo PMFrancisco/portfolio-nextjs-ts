@@ -6,6 +6,7 @@ import { routing } from '@/i18n/routing';
 import { Analytics } from '@vercel/analytics/react';
 import { Inter, JetBrains_Mono } from 'next/font/google';
 import { projects } from '@/data/projectsData';
+import { BASE_URL } from '@/lib/constants';
 import '../globals.css';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
@@ -26,7 +27,6 @@ export const viewport: Viewport = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'metadata' });
-  const baseUrl = 'https://portfolio-pmfrancisco.vercel.app';
 
   return {
     title: {
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     authors: [{ name: 'Francisco Pérez' }],
     creator: 'Francisco Pérez',
     publisher: 'Francisco Pérez',
-    metadataBase: new URL(baseUrl),
+    metadataBase: new URL(BASE_URL),
     alternates: {
       canonical: `/${locale}`,
       languages: {
@@ -49,10 +49,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: t('title'),
       description: t('description'),
-      url: `${baseUrl}/${locale}`,
+      url: `${BASE_URL}/${locale}`,
       siteName: t('title'),
       locale: locale,
       type: 'website',
+      images: [
+        {
+          url: `${BASE_URL}/${locale}/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt: t('description'),
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
@@ -91,7 +99,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Francisco Pérez',
-    url: 'https://portfolio-pmfrancisco.vercel.app',
+    url: BASE_URL,
     jobTitle: 'Full Stack Developer',
     sameAs: [
       'https://linkedin.com/in/franciscopm',
@@ -103,7 +111,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Francisco Pérez Portfolio',
-    url: 'https://portfolio-pmfrancisco.vercel.app',
+    url: BASE_URL,
   };
 
   const itemListSchema = {

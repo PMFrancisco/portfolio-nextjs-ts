@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Francisco Pérez",
-    "description": "Francisco Pérez Full Stack Developer Portfolio",
+    "description": "Francisco Pérez — Full Stack Developer specializing in React, Next.js, Node.js & TypeScript. Explore my projects, professional experience, and get in touch.",
     "keywords": "Full Stack Developer, Web Development, React, Next.js, TypeScript, Node.js, Portfolio, Francisco Pérez"
   },
   "hero": {
@@ -123,7 +123,8 @@
     "skipToContent": "Skip to main content",
     "mainNavigation": "Main navigation",
     "opensInNewTab": "(opens in new tab)",
-    "switchLanguage": "Switch to Spanish"
+    "switchLanguage": "Switch to Spanish",
+    "opensEmailClient": "(opens email client)"
   },
   "footer": {
     "copyright": "© {year} Francisco Pérez."

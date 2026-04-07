@@ -35,9 +35,9 @@ export const Toolbox: React.FC = () => {
             >
               {t(`categories.${category}`)}
             </Heading>
-            <div className="flex flex-wrap gap-4">
+            <ul className="flex flex-wrap gap-4">
               {skillList.map((skill: string, index: number) => (
-                <div
+                <li
                   key={skill}
                   className={`
                     relative px-4 py-2 bg-emerald-100 border-2 border-black
@@ -50,9 +50,9 @@ export const Toolbox: React.FC = () => {
                   `}
                 >
                   {skill}
-                </div>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         ))}
       </div>

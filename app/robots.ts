@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
+import { BASE_URL } from '@/lib/constants';
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = 'https://portfolio-pmfrancisco.vercel.app';
 
   return {
     rules: [
@@ -23,6 +23,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: `${BASE_URL}/sitemap.xml`,
   };
 }
