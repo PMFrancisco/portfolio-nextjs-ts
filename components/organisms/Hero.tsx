@@ -23,7 +23,7 @@ export const Hero: React.FC<HeroProps> = ({ activeSection }) => {
   ];
 
   return (
-    <section className="h-full flex flex-col p-8 lg:p-12 xl:p-16 bg-emerald-500 text-white relative border-b-4 lg:border-b-0 border-black overflow-y-auto scrollbar-hide">
+    <header className="h-full flex flex-col p-8 lg:p-12 xl:p-16 bg-emerald-700 text-white relative border-b-4 lg:border-b-0 border-black overflow-y-auto scrollbar-hide">
       <div className="absolute top-4 right-4 z-10">
         <LanguageSwitcher />
       </div>
@@ -31,7 +31,10 @@ export const Hero: React.FC<HeroProps> = ({ activeSection }) => {
       <div className="max-w-xl mx-auto lg:mx-0 flex flex-col min-h-full">
         <div className="shrink-0 mb-6 xl:mb-10 pt-4">
           <div className="flex flex-col xl:flex-row xl:items-end gap-6 mb-6">
-            <div className="w-20 h-20 lg:w-24 lg:h-24 xl:w-36 xl:h-36 rounded-full overflow-hidden border-4 border-black shadow-neo bg-white shrink-0">
+            <div
+              className="w-20 h-20 lg:w-24 lg:h-24 xl:w-36 xl:h-36 rounded-full overflow-hidden border-4 border-black shadow-neo bg-white shrink-0"
+              aria-hidden="true"
+            >
               <div className="w-full h-full bg-gray-200 flex items-center justify-center text-black font-mono text-2xl lg:text-3xl font-bold">
                 FP
               </div>
@@ -59,16 +62,21 @@ export const Hero: React.FC<HeroProps> = ({ activeSection }) => {
             {t('hero.tagline')}
           </p>
 
-          <nav className="hidden lg:flex flex-col gap-2 xl:gap-4">
+          <nav
+            aria-label={t('a11y.mainNavigation')}
+            className="hidden lg:flex flex-col gap-2 xl:gap-4"
+          >
             {navItems.map((item) => {
               const isActive = activeSection === item.href.substring(1);
               return (
                 <a
                   key={item.href}
                   href={item.href}
-                  className={`text-lg lg:text-xl xl:text-2xl font-mono font-bold hover:translate-x-4 transition-transform w-fit flex items-center gap-3 group ${isActive ? 'translate-x-4 text-black' : 'text-white hover:text-black'}`}
+                  aria-current={isActive ? 'true' : undefined}
+                  className={`text-lg lg:text-xl xl:text-2xl font-mono font-bold hover:translate-x-4 transition-transform w-fit flex items-center gap-3 group focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-black motion-reduce:transition-none motion-reduce:hover:transform-none ${isActive ? 'translate-x-4 text-black' : 'text-white hover:text-black'}`}
                 >
                   <span
+                    aria-hidden="true"
                     className={`w-2 h-2 bg-black transition-transform ${isActive ? 'scale-100' : 'scale-0 group-hover:scale-100'}`}
                   ></span>
                   {item.label}
@@ -98,6 +106,6 @@ export const Hero: React.FC<HeroProps> = ({ activeSection }) => {
           </div>
         </div>
       </div>
-    </section>
+    </header>
   );
 };

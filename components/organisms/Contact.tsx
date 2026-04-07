@@ -11,7 +11,10 @@ export const Contact: React.FC = () => {
   return (
     <Section id="contact" title={t('title')}>
       <div className="bg-white border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-        <div className="bg-black text-white px-4 py-2 flex items-center justify-between border-b-2 border-black">
+        <div
+          className="bg-black text-white px-4 py-2 flex items-center justify-between border-b-2 border-black"
+          aria-hidden="true"
+        >
           <div className="font-mono font-bold text-sm tracking-widest">
             MESSAGE_SYSTEM.EXE
           </div>
@@ -37,9 +40,11 @@ export const Contact: React.FC = () => {
             >
               {t('sayHello')}
             </Button>
-            <div className="h-px w-12 bg-black md:hidden"></div>{' '}
-            {/* Mobile divider */}
-            <span className="font-mono font-bold text-gray-400 hidden md:block">
+            <div className="h-px w-12 bg-black md:hidden" aria-hidden="true"></div>
+            <span
+              className="font-mono font-bold text-gray-400 hidden md:block"
+              aria-hidden="true"
+            >
               -- OR --
             </span>
             <Button

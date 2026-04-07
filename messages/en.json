@@ -40,6 +40,7 @@
   "projects": {
     "title": "Selected Projects",
     "viewProject": "View Project",
+    "screenshotAlt": "Screenshot of {name}",
     "items": {
       "meraParivar": {
         "name": "MVP Mera Parivar",
@@ -66,13 +67,19 @@
         "title": "Full Stack Developer",
         "subtitle": "T.I.S. Consultoría de IA",
         "period": "Aug 2025 - Present",
-        "description": "Designed and integrated omnichannel virtual switchboard connecting calls, WhatsApp, web chat, and email. Implemented AI-driven automation and routing. Integrated with CRM and ERP systems. Created MarIA 360 as the unified communication layer."
+        "description": "Built a multi-tenant AI-powered contact center platform (MarIA) using microservices architecture. Developed a real-time voice AI pipeline processing inbound calls through STT → LLM → TTS with telephony integration. Implemented an MCP server integrating CRM/ERP data for AI agents. Designed a credit-based billing system with multi-tenant isolation and JWT-authenticated REST API. Maintained CI/CD pipelines with parallel test suites, automated versioning, and scheduled deployments."
+      },
+      "ligatgm": {
+        "title": "Full Stack Developer (Freelance)",
+        "subtitle": "Liga TGM",
+        "period": "Aug 2025 - Sep 2025",
+        "description": "Migrated the full platform from Vue.js to Next.js (TypeScript) achieving feature parity and improving performance via React Server Components. Built a dual competition system supporting leagues (round-robin with live standings) and tournaments (automatic and manual bracket generation). Implemented role-based authentication including admin panel, user management, and ban/session handling."
       },
       "catapulta": {
         "title": "Full Stack Developer",
         "subtitle": "Catapulta",
         "period": "Jan 2025 - Aug 2025",
-        "description": "Event microservice with Ponder to index and process smart contract events in real time. MCP for CLI enabling command execution through natural language. CLI commands for Foundry optimizing contract deployment and verification."
+        "description": "Developed a Ponder-based system to index and process smart contract events (Ethereum, Polygon) in real time. Designed an MCP for CLI that allows using the CLI through natural language, translating requests into executable commands. Implemented custom CLI commands to optimize contract deployment and verification using Foundry. Developed a hybrid payment platform integrating Stripe and cryptocurrency payments via smart contracts."
       },
       "adoptavalenciano": {
         "title": "Fullstack Developer",
@@ -111,6 +118,12 @@
     "description": "I'm currently open to new opportunities and collaborations. Whether you have a question, a project idea, or just want to say hi, I'll try my best to get back to you!",
     "sayHello": "Say Hello",
     "connectLinkedIn": "Connect on LinkedIn"
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "mainNavigation": "Main navigation",
+    "opensInNewTab": "(opens in new tab)",
+    "switchLanguage": "Switch to Spanish"
   },
   "footer": {
     "copyright": "© {year} Francisco Pérez."

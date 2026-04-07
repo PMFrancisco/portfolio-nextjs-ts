@@ -10,8 +10,11 @@ export const About: React.FC = () => {
   return (
     <Section id="about" title={t('title')}>
       <div className="relative bg-[#fffBEB] border-2 border-black shadow-neo overflow-hidden">
-        <div className="h-10 bg-[#e5e5e5] border-b-2 border-black flex items-center justify-between px-4">
-          <div className="text-xs font-mono text-gray-500 font-bold">NOTES</div>
+        <div
+          className="h-10 bg-[#e5e5e5] border-b-2 border-black flex items-center justify-between px-4"
+          aria-hidden="true"
+        >
+          <div className="text-xs font-mono text-gray-700 font-bold">NOTES</div>
           <div className="flex gap-2">
             <div className="w-3 h-3 rounded-full bg-black"></div>
             <div className="w-3 h-3 rounded-full bg-black"></div>

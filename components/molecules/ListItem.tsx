@@ -40,10 +40,13 @@ export const ListItem: React.FC<ListItemProps> = ({
       </div>
 
       {!isLast && (
-        <div className="absolute left-1/2 -bottom-8 w-1 h-8 bg-black -translate-x-1/2 z-0">
+        <div
+          className="absolute left-1/2 -bottom-8 w-1 h-8 bg-black -translate-x-1/2 z-0"
+          aria-hidden="true"
+        >
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-[2px]">
             <div
-              className="w-0 h-0 
+              className="w-0 h-0
               border-l-[8px] border-l-transparent
               border-r-[8px] border-r-transparent
               border-t-[12px] border-t-black"

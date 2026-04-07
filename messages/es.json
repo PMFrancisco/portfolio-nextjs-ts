@@ -40,6 +40,7 @@
   "projects": {
     "title": "Proyectos Seleccionados",
     "viewProject": "Ver Proyecto",
+    "screenshotAlt": "Captura de pantalla de {name}",
     "items": {
       "meraParivar": {
         "name": "MVP Mera Parivar",
@@ -66,13 +67,19 @@
         "title": "Desarrollador Full Stack",
         "subtitle": "T.I.S. Consultoría de IA",
         "period": "Ago 2025 - Presente",
-        "description": "Diseño e integración de centralita virtual omnicanal conectando llamadas, WhatsApp, chat web y email. Implementación de automatización y enrutamiento impulsado por IA. Integración con sistemas CRM y ERP. Creación de MarIA 360 como capa de comunicación unificada."
+        "description": "Desarrollo de una plataforma multi-tenant de contact center impulsada por IA (MarIA) usando arquitectura de microservicios. Desarrollo de un pipeline de voz en tiempo real que procesa llamadas entrantes mediante STT → LLM → TTS con integración de telefonía. Implementación de un servidor MCP integrando datos de CRM/ERP para agentes de IA. Diseño de un sistema de facturación por créditos con aislamiento multi-tenant y REST API autenticada con JWT. Mantenimiento de pipelines de CI/CD con suites de tests en paralelo, versionado automático y despliegues programados."
+      },
+      "ligatgm": {
+        "title": "Desarrollador Full Stack (Freelance)",
+        "subtitle": "Liga TGM",
+        "period": "Ago 2025 - Sep 2025",
+        "description": "Migración completa de la plataforma de Vue.js a Next.js (TypeScript) logrando paridad de funcionalidades y mejorando el rendimiento mediante React Server Components. Desarrollo de un sistema dual de competiciones con soporte para ligas (todos contra todos con clasificaciones en tiempo real) y torneos (generación automática y manual de brackets). Implementación de autenticación basada en roles incluyendo panel de administración, gestión de usuarios y control de sesiones."
       },
       "catapulta": {
         "title": "Desarrollador Full Stack",
         "subtitle": "Catapulta",
         "period": "Ene 2025 - Ago 2025",
-        "description": "Microservicio de eventos con Ponder para indexar y procesar eventos de contratos inteligentes en tiempo real. MCP para CLI permitiendo usar comandos mediante lenguaje natural. Comandos CLI para Foundry optimizando despliegue y verificación de contratos."
+        "description": "Desarrollo de un sistema basado en Ponder para indexar y procesar eventos de smart contracts (Ethereum, Polygon) en tiempo real. Diseño de un MCP para CLI que permite usar la línea de comandos mediante lenguaje natural, traduciendo peticiones a comandos ejecutables. Implementación de comandos CLI personalizados para optimizar el despliegue y verificación de contratos usando Foundry. Desarrollo de una plataforma de pagos híbrida integrando Stripe y pagos en criptomonedas mediante smart contracts."
       },
       "adoptavalenciano": {
         "title": "Desarrollador Fullstack",
@@ -111,6 +118,12 @@
     "description": "Actualmente estoy abierto a nuevas oportunidades y colaboraciones. Si tienes una pregunta, una idea de proyecto, o simplemente quieres saludar, ¡haré lo posible por responderte!",
     "sayHello": "Saluda",
     "connectLinkedIn": "Conectar en LinkedIn"
+  },
+  "a11y": {
+    "skipToContent": "Saltar al contenido principal",
+    "mainNavigation": "Navegación principal",
+    "opensInNewTab": "(se abre en una pestaña nueva)",
+    "switchLanguage": "Cambiar a inglés"
   },
   "footer": {
     "copyright": "© {year} Francisco Pérez."

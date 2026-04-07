@@ -10,6 +10,7 @@ type ProjectCardProps = {
   link: string;
   imageUrl: string;
   skills: string[];
+  screenshotAlt: string;
   viewProjectLabel: string;
 };
 
@@ -19,18 +20,19 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   link,
   imageUrl,
   skills,
+  screenshotAlt,
   viewProjectLabel,
 }) => {
   return (
-    <div className="bg-white border-2 border-black shadow-neo p-4 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
+    <div className="bg-white border-2 border-black shadow-neo p-4 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none">
       <div className="relative w-full border-2 border-black mb-4 overflow-hidden bg-gray-100 group">
         <div style={{ paddingBottom: '56.25%' }} />
         <Image
           src={imageUrl}
-          alt={name}
+          alt={screenshotAlt}
           fill={true}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="absolute top-0 left-0 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+          className="absolute top-0 left-0 object-cover grayscale group-hover:grayscale-0 transition-all duration-500 motion-reduce:transition-none"
         />
       </div>
 

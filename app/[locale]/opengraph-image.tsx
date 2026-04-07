@@ -22,7 +22,7 @@ export default async function Image({
   return new ImageResponse(
     <div
       style={{
-        background: '#10b981', // emerald-500
+        background: '#047857', // emerald-700
         width: '100%',
         height: '100%',
         display: 'flex',

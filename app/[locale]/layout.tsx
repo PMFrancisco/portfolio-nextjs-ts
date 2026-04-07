@@ -20,7 +20,7 @@ type Props = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#10b981',
+  themeColor: '#047857',
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

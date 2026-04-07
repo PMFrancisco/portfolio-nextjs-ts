@@ -16,7 +16,7 @@ export const Section: React.FC<SectionProps> = ({
   return (
     <section id={id} className={`scroll-mt-8 ${className}`}>
       <div className="flex items-center gap-4 mb-8 border-b-4 border-black pb-2">
-        <div className="w-6 h-6 bg-black"></div>
+        <div className="w-6 h-6 bg-black" aria-hidden="true"></div>
         <Heading
           level={2}
           className="uppercase tracking-widest text-xl md:text-2xl"

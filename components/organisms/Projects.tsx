@@ -19,6 +19,7 @@ export const Projects: React.FC = () => {
             link={project.link}
             imageUrl={project.imageUrl}
             skills={project.skills}
+            screenshotAlt={t('screenshotAlt', { name: t(`items.${project.id}.name`) })}
             viewProjectLabel={t('viewProject')}
           />
         ))}
